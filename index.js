@@ -1,4 +1,8 @@
 const inquirer = require('inquirer');
+// const fs = require('fs');
+const generateMd = require('./src/generateMarkdown.js');
+
+const generateFile = require('./utils/generateFile.js');
 
 
 const promptUser = () => {
@@ -68,7 +72,7 @@ const promptUser = () => {
 
         // },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'licenses',
             message: 'Select which license covers your project',
             choices: ['MIT', 'Apache License 2.0', 'GNU GPLv3', 'ISC']
@@ -131,8 +135,22 @@ const promptUser = () => {
                 }
             }
         }
-    ])
-}
+    ]);
+};
+
+
+
+promptUser()
+    .then(generateMd)
+    .then(pageMD => {
+        return generateFile(pageMD);
+    })
+    .then(response => {
+        console.log(response);
+    })
+    .catch(err => {
+        console.log(err);
+    });
 
 
 
