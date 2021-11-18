@@ -34,9 +34,46 @@ ${userInputs.customContribute}
     }
 };
 
+const contributeBadge = (check) => {
+    if (!check) {
+        return `
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt) 
+`
+    } 
+};
+
+const licenseBadge = (license) => {
+    switch(license) {
+        case "MIT":
+            return `
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+`
+        break;
+        case 'Apache License 2.0':
+            return `
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+`
+        break;
+        case 'GNU GPLv3':
+            return `
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+`
+        break;
+        default: 
+            return `
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+`
+    }
+};
+
+
+
+
 module.exports = userInputs => {
     return `
 # ${userInputs.title}
+
+${contributeBadge(userInputs.contribute)} ${licenseBadge(userInputs.licenses)}
 
 ## Description
 

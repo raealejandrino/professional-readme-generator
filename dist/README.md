@@ -1,9 +1,15 @@
 
-# asdasd
+# asd
+
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.txt) 
+ 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Description
 
-asdasd
+asd
 
 
 ## Table of Contents
@@ -18,24 +24,24 @@ asdasd
 
 ## Installation
 
-asdasd
+as
 
 ## Usage
 
-asdasd
+dasd
 
 ## License
 
 
-Copyright (c) asdasd. All rights reserved.
+Copyright (c) asd. All rights reserved.
 
 Licensed under the MIT license.
 
 ## Contributing
 
 
-asdasdasd
-        
+If you'd like to contribute to this project, please refer to the [Contributor Covenant](https://www.contributor-covenant.org/) standard guidelines.
+
 
 ## Tests
 
@@ -45,6 +51,6 @@ asd
 
 If you have any questions or concerns, please feel free to contact me via Github or email!
 
-Email: asdasd
+Email: asd
 
-[Github](https://github.com/asdasd)
+[Github](https://github.com/asd)
